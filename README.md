@@ -4,7 +4,6 @@ Scripts used for data analysis in the following manuscript:
 
 **Population structure, local adaptation and gene family expansion in marram grass**
 
-Sections include: 
 
 ## 1. Genome assembly and annotation
 * Assemble reads
