@@ -7,7 +7,7 @@ Scripts used for data analysis in the following manuscript:
 
 ## 1. Genome assembly and annotation
 * Assemble reads
-* [Annotate assembly with Helixer] (./1_genome_assembly/marram_annotation.sh)
+* [Annotate assembly with Helixer](./1_genome_assembly/marram_annotation.sh)
 * [Assemble organellar genomes](./1_genome_assembly/oatk.sh) 
 
 ## 2. Gene family expansions and contractions
