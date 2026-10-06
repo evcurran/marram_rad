@@ -11,6 +11,7 @@ Scripts used for data analysis in the following manuscript:
 * [Assemble organellar genomes](./1_genome_assembly/oatk.sh) 
 
 ## 2. Gene family expansions and contractions
+* Generating predicted proteome
 
 ## 3. Read processing and alignment
 * [Filter and trim reads](./3_read_processing_alignment/sequence_trimming_filtering_fastp.sh)
