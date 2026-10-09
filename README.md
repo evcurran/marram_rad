@@ -6,11 +6,12 @@ Scripts used for data analysis in the following manuscript:
 
 
 ## 1. Genome assembly and annotation
-* Assemble reads
-* Annotate assembly with Helixer
+* [Assemble reads](./1_genome_assembly/marram_assembly.sh) 
+* [Annotate assembly with Helixer](./1_genome_assembly/marram_annotation.sh)
 * [Assemble organellar genomes](./1_genome_assembly/oatk.sh) 
 
 ## 2. Gene family expansions and contractions
+* Generating predicted proteome
 
 ## 3. Read processing and alignment
 * [Filter and trim reads](./3_read_processing_alignment/sequence_trimming_filtering_fastp.sh)
@@ -40,6 +41,6 @@ Scripts used for data analysis in the following manuscript:
     1. [Functionally annotate genes](./8_genome_scan/blastp_oryza_thaliana.sh)
     2. [Download UniProt GO terms](./8_genome_scan/download_uniprot_go_terms.sh)
     3. [Generate input files for topGO](./8_genome_scan/topgo_input_files.sh) (candidate gene list, 'gene universe' list and marram annotation-to-GO term map)
-    4. Run topGO analysis
+    4. [Run topGO analysis](./8_genome_scan/topGo.R)
    
    
