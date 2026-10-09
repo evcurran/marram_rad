@@ -29,7 +29,7 @@ allRes <- GenTable(GOdata_MF, classic = resultFisher,
                    ranksOf = "classic",topNodes=length(resultFisher@score),numChar=100)
 
 
-filtRes.MF <- allRes[allRes$classic<0.05 & allRes$Significant>2,]
+filtRes.MF <- allRes[allRes$weight<0.05 & allRes$Significant>2,]
 filtRes.MF$Ontology <- "MF"
 
 
@@ -41,7 +41,7 @@ resultWeight <- getSigGroups(GOdata_BP, test.stat2)
 allRes <- GenTable(GOdata_BP, classic = resultFisher, 
                    weight = resultWeight, orderBy = "weight", 
                    ranksOf = "classic",topNodes=length(resultFisher@score),numChar=100)
-filtRes.BP <- allRes[allRes$classic<0.05 & allRes$Significant>2,]
+filtRes.BP <- allRes[allRes$weight<0.05 & allRes$Significant>2,]
 filtRes.BP$Ontology <- "BP"
 
 ##Cellular Component
@@ -52,7 +52,7 @@ resultWeight <- getSigGroups(GOdata_CC, test.stat2)
 allRes <- GenTable(GOdata_CC, classic = resultFisher, 
                    weight = resultWeight, orderBy = "weight", 
                    ranksOf = "classic", topNodes=length(resultFisher@score))
-filtRes.CC <- allRes[allRes$classic<0.05 & allRes$Significant>2,]
+filtRes.CC <- allRes[allRes$weight<0.05 & allRes$Significant>2,]
 filtRes.CC$Ontology <- "CC"
 
 ##Output all three
